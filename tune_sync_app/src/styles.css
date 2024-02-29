@@ -63,6 +63,7 @@ body {
     display: flex;
     text-decoration: none;
     color: var(--white);
+    cursor: pointer;
 }
 
 .navigation ul li:hover,
@@ -575,6 +576,7 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 200px;
+    height: 200px;
 }
 
 .song-details {
