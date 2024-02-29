@@ -18,6 +18,10 @@ import { ArtistSongsComponent } from './components/artist-songs/artist-songs.com
 import { AuthComponent } from './components/auth/auth.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ArtistsComponent } from './components/artists/artists.component';
+import { LikedSongsComponent } from './components/liked-songs/liked-songs.component';
+import { CategoryCardComponent } from './components/category-card/category-card.component';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { CommonModule } from '@angular/common';
     ArtistDetailsComponent,
     AddNewSongComponent,
     ArtistSongsComponent,
-    AuthComponent
+    AuthComponent,
+    ArtistsComponent,
+    LikedSongsComponent,
+    CategoryCardComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,

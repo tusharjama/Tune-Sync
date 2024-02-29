@@ -28,9 +28,6 @@ export class TopRatedSongsComponent {
       singer: "Rahul More",
       imgUrl: "sarkar.jpeg"
     },
-
   ]
-
-
 
 }

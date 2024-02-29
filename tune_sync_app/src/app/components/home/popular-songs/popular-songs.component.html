@@ -6,11 +6,11 @@
 
 
     <div class="card-container">
-        <div class="music-card">
-            <img src="assets/imgs/cover/JaanNisaarPoster.jpg" alt="">
+        <div class="music-card" *ngFor="let song of popularSongs">
+            <img src="assets/imgs/cover/{{song.imgUrl}}" alt="">
             <div class="song-details">
-                <h3 class="song-title">Jaan Nisaar</h3>
-                <p>Arjit Singh</p>
+                <h3 class="song-title">{{song.title}}</h3>
+                <p>{{song.singer}}</p>
                 <div class="play">
                     <a href="">
                         <span class="fa fa-play"></span>
