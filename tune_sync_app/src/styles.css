@@ -219,7 +219,7 @@ body {
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    
+
     cursor: pointer;
 }
 
@@ -250,7 +250,7 @@ body {
     color: var(--white);
 }
 
-.right-section{
+.right-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -617,6 +617,12 @@ h3.song-title {
     transform: translateY(-20px);
 }
 
+.artist-card {
+    width: 165px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
 .artist-card img {
     width: 152px;
     height: 152px;
@@ -717,3 +723,5 @@ form .btn {
 form .btn:hover {
     border: 1px solid var(--blue);
 }
+
+
