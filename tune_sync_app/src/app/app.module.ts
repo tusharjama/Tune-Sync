@@ -22,6 +22,14 @@ import { ArtistsComponent } from './components/artists/artists.component';
 import { LikedSongsComponent } from './components/liked-songs/liked-songs.component';
 import { CategoryCardComponent } from './components/category-card/category-card.component';
 import { CategoryComponent } from './components/category/category.component';
+import { LibrarySectionComponent } from './components/library-section/library-section.component';
+import { PlaylistComponent } from './components/library-section/playlist/playlist.component';
+import { PlaylistItemComponent } from './components/playlist-item/playlist-item.component';
+import { PlaylistDetailsComponent } from './components/playlist-item/playlist-details/playlist-details.component';
+import { CreatePlaylistComponent } from './components/create-playlist/create-playlist.component';
+import { CreateFormComponent } from './components/create-playlist/create-form/create-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CountCommasPipe } from './pipes/custom.pipe';
 
 @NgModule({
   declarations: [
@@ -41,7 +49,14 @@ import { CategoryComponent } from './components/category/category.component';
     ArtistsComponent,
     LikedSongsComponent,
     CategoryCardComponent,
-    CategoryComponent
+    CategoryComponent,
+    LibrarySectionComponent,
+    PlaylistComponent,
+    PlaylistItemComponent,
+    PlaylistDetailsComponent,
+    CreatePlaylistComponent,
+    CreateFormComponent,
+    CountCommasPipe
   ],
   imports: [
     BrowserModule,
@@ -49,6 +64,7 @@ import { CategoryComponent } from './components/category/category.component';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
+    HttpClientModule,
     IonicModule.forRoot({})
   ],
   providers: [],

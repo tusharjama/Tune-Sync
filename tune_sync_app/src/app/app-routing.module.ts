@@ -7,6 +7,9 @@ import { AuthComponent } from './components/auth/auth.component';
 import { ArtistsComponent } from './components/artists/artists.component';
 import { LikedSongsComponent } from './components/liked-songs/liked-songs.component';
 import { CategoryComponent } from './components/category/category.component';
+import { LibrarySectionComponent } from './components/library-section/library-section.component';
+import { PlaylistItemComponent } from './components/playlist-item/playlist-item.component';
+import { CreatePlaylistComponent } from './components/create-playlist/create-playlist.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -15,7 +18,11 @@ const routes: Routes = [
   {path:'add-new-song', component: AddNewSongComponent},
   {path:'artists', component: ArtistsComponent},
   {path:'liked-songs', component: LikedSongsComponent},
-  {path:'categories', component: CategoryComponent}
+  {path:'categories', component: CategoryComponent},
+  {path: 'library', component: LibrarySectionComponent},
+  {path: 'library/playlist/:id', component: PlaylistItemComponent},
+  {path: 'library/create-playlist', component: CreatePlaylistComponent},
+
 ];
 
 @NgModule({
