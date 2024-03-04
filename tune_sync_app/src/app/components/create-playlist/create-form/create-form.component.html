@@ -1,0 +1,62 @@
+<div class="song-Container">
+
+  <div class="card-container">
+    <form [formGroup]="createPlaylistForm" (ngSubmit)="onCreatePlaylistSubmit()">
+      <div class="playlist-hero-container">
+        <div class="playlist-item-cover">
+          <p>{{coverLetter}}</p>
+        </div>
+        <div class="playlist-item-details">
+          <div class="playlist-form-item">
+            <input type="text" (change)="updateCoverLetter($event)" placeholder="Enter Playlist Name" formControlName="playlistTitle">
+            <div class="error-msg" *ngIf="createPlaylistForm.get('playlistTitle').invalid && createPlaylistForm.get('playlistTitle').touched">*Title is required</div>
+          </div>
+          <p><ion-icon name="musical-notes-outline"></ion-icon> {{songsCnt}} Songs</p>
+          <input class="btn w-25" type="submit" value="Create Playlist" [disabled]="createPlaylistForm.invalid">
+
+          <div class="error-msg">
+            {{emptySongListMsg}}
+          </div>
+        </div>
+      </div>
+  
+      <div class="playlist-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Artist</th>
+              <th style="text-align:center">Add/Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="song-info">
+                  <img src="assets/imgs/cover/JaanNisaarPoster.jpg" width="100" alt="img">
+                  <p>Jaan Nisaar</p>
+                </div>
+              </td>
+              <td>Arjit Singh</td>
+              <td class="play-btn"><ion-icon name="add-circle" (click)="addRemoveToPlaylist($event, 1)"></ion-icon></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <div class="song-info">
+                  <img src="assets/imgs/cover/JaanNisaarPoster.jpg" width="100" alt="img">
+                  <p>Jaan Nisaar</p>
+                </div>
+              </td>
+              <td>Arjit Singh</td>
+              <td class="play-btn"><ion-icon name="add-circle" (click)="addRemoveToPlaylist($event, 2)"></ion-icon></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </form>
+  </div>
+</div>
