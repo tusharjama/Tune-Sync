@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/user/home/home.component';
 import { ArtistDetailsComponent } from './components/user/artist-details/artist-details.component';
-import { AddNewSongComponent } from './components/add-new-song/add-new-song.component';
+import { AddNewSongComponent } from './components/artist/add-new-song/add-new-song.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { ArtistsComponent } from './components/user/artists/artists.component';
 import { LikedSongsComponent } from './components/user/liked-songs/liked-songs.component';

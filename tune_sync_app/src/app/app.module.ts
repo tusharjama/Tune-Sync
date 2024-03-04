@@ -13,7 +13,7 @@ import { IonicModule } from '@ionic/angular';
 import { SongCardItemComponent } from './components/user/song-card-item/song-card-item.component';
 import { ArtistCardItemComponent } from './components/user/artist-card-item/artist-card-item.component';
 import { ArtistDetailsComponent } from './components/user/artist-details/artist-details.component';
-import { AddNewSongComponent } from './components/add-new-song/add-new-song.component';
+import { AddNewSongComponent } from './components/artist/add-new-song/add-new-song.component';
 import { ArtistSongsComponent } from './components/user/artist-songs/artist-songs.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
